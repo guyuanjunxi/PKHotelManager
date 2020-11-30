@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChangeRoom">
+
+    <include layout="@layout/nav_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/logo" />
+
+
+
+    <com.example.hotelmanager.views.InputView
+        android:id="@+id/input_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/dot"
+        app:input_hint="要操作目标的id"
+        app:is_password="false">
+
+    </com.example.hotelmanager.views.InputView>
+
+            <View
+                style="@style/line">
+            </View>
+
+            <com.example.hotelmanager.views.InputView
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputViewHeight"
+                app:input_icon="@mipmap/dot"
+                app:input_hint="客房名称"
+                app:is_password="false">
+            </com.example.hotelmanager.views.InputView>
+
+            <View
+                style="@style/line">
+            </View>
+
+            <com.example.hotelmanager.views.InputView
+                android:id="@+id/input_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputViewHeight"
+                app:input_icon="@mipmap/dot"
+                app:input_hint="客房大小"
+                app:is_password="false">
+            </com.example.hotelmanager.views.InputView>
+
+    <View
+        style="@style/line">
+    </View>
+
+    <com.example.hotelmanager.views.InputView
+        android:id="@+id/input_bednum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/dot"
+        app:input_hint="床的数量"
+        app:is_password="false">
+    </com.example.hotelmanager.views.InputView>
+
+    <View
+        style="@style/line">
+    </View>
+
+    <com.example.hotelmanager.views.InputView
+        android:id="@+id/input_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/dot"
+        app:input_hint="价格"
+        app:is_password="false">
+    </com.example.hotelmanager.views.InputView>
+
+    <View
+        style="@style/line">
+    </View>
+
+    <com.example.hotelmanager.views.InputView
+        android:id="@+id/input_kongtiao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/dot"
+        app:input_hint="有无空调"
+        app:is_password="false">
+    </com.example.hotelmanager.views.InputView>
+
+    <View
+        style="@style/line">
+    </View>
+
+        <com.example.hotelmanager.views.InputView
+            android:id="@+id/input_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputViewHeight"
+            app:input_icon="@mipmap/dot"
+            app:input_hint="有无电视"
+            app:is_password="false">
+        </com.example.hotelmanager.views.InputView>
+
+        <View
+            style="@style/line">
+        </View>
+
+        <com.example.hotelmanager.views.InputView
+            android:id="@+id/input_weiyu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputViewHeight"
+            app:input_icon="@mipmap/dot"
+            app:input_hint="有无独立卫浴"
+            app:is_password="false">
+        </com.example.hotelmanager.views.InputView>
+
+        <View
+            style="@style/line">
+        </View>
+
+        <com.example.hotelmanager.views.InputView
+            android:id="@+id/input_cfj"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputViewHeight"
+            app:input_icon="@mipmap/dot"
+            app:input_hint="有无吹风机"
+            app:is_password="false">
+        </com.example.hotelmanager.views.InputView>
+
+        <View
+            style="@style/line">
+        </View>
+
+
+            <com.example.hotelmanager.views.InputView
+                android:id="@+id/input_dianhua"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputViewHeight"
+                app:input_icon="@mipmap/dot"
+                app:input_hint="有无电话"
+                app:is_password="false">
+            </com.example.hotelmanager.views.InputView>
+
+            <View
+                style="@style/line">
+            </View>
+
+    <Button
+        android:id="@+id/submit"
+        android:background="@color/mainColor"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onSubmitClick"
+        android:textColor="@color/white"
+        android:text="提交修改信息" />
+
+    <Button
+        android:id="@+id/look"
+        android:background="@color/mainColor"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onLookClick"
+        android:textColor="@color/white"
+        android:text="查看目标信息" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

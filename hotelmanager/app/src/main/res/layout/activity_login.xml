@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Login">
+
+    <include layout="@layout/nav_bar"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"
+        android:src="@mipmap/logo" />
+
+
+    <com.example.hotelmanager.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/sj"
+        app:input_hint="用户id"
+        app:is_password="false">
+    </com.example.hotelmanager.views.InputView>
+
+    <View
+        style="@style/line">
+    </View>
+
+    <com.example.hotelmanager.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/mm"
+        app:input_hint="密码"
+        app:is_password="true">
+    </com.example.hotelmanager.views.InputView>
+
+    <View
+        style="@style/line">
+    </View>
+
+    <Button
+        android:id="@+id/forget"
+        android:background="@color/mainColor"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onForgetClick"
+        android:textColor="@color/white"
+        android:text="忘记密码" />
+
+    <Button
+        android:id="@+id/button"
+        android:background="@color/mainColor"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onCommitClick"
+        android:textColor="@color/white"
+        android:text="登  录" />
+
+</LinearLayout>
